@@ -1,0 +1,32 @@
+{
+  "name": "ajax-mobx",
+  "version": "1.0.0",
+  "description": "Ajax for MobX",
+  "main": "index.js",
+  "module": "index.es6.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d8corp/ajax-mobx.git"
+  },
+  "keywords": [
+    "ajax",
+    "async",
+    "await",
+    "data",
+    "mobx",
+    "api",
+    "rest",
+    "front-end"
+  ],
+  "author": "Mikhail Lysikov <d8corp@mail.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d8corp/ajax-mobx/issues"
+  },
+  "homepage": "https://github.com/d8corp/ajax-mobx",
+  "dependencies": {
+    "async-mobx": "^1.0.0",
+    "mobx": ">=3",
+    "tslib": "^2.0.1"
+  }
+}
