@@ -8,7 +8,7 @@ export declare type AjaxOptions<D extends AjaxData = AjaxData, Q extends AjaxQue
     query?: Q;
     type?: 'json' | 'text' | 'blob' | 'arrayBuffer' | 'formData';
 };
-declare class Ajax<D extends AjaxData = AjaxData, Q extends AjaxQueryObject = AjaxQueryObject> extends Async {
+declare class Ajax<V = any, D extends AjaxData = AjaxData, Q extends AjaxQueryObject = AjaxQueryObject> extends Async<V> {
     query: Q;
     data: D;
     answer: Response;

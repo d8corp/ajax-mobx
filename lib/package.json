@@ -1,6 +1,6 @@
 {
   "name": "ajax-mobx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ajax for MobX",
   "main": "index.js",
   "module": "index.es6.js",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/d8corp/ajax-mobx",
   "dependencies": {
-    "async-mobx": "^1.0.0",
+    "async-mobx": "^1.0.1",
     "mobx": ">=3",
     "tslib": "^2.0.1"
   }

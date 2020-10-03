@@ -1,6 +1,6 @@
 {
   "name": "ajax-mobx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ajax for MobX",
   "main": "index.js",
   "module": "index.es6.js",
