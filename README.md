@@ -2,7 +2,8 @@
 [![NPM](https://img.shields.io/npm/v/ajax-mobx.svg)](https://github.com/d8corp/ajax-mobx/blob/master/CHANGELOG.md)
 [![downloads](https://img.shields.io/npm/dm/ajax-mobx.svg)](https://www.npmjs.com/package/ajax-mobx)
 [![license](https://img.shields.io/npm/l/ajax-mobx)](https://github.com/d8corp/ajax-mobx/blob/master/LICENSE)  
-Ajax functionality for [Mobx 3](https://mobx.js.org/README.html) and more.
+Ajax functionality for [Mobx 3+](https://mobx.js.org/README.html).  
+Based on [async-mobx](https://github.com/d8corp/async-mobx)
 ### Installation
 npm
 ```bash

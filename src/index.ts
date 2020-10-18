@@ -11,7 +11,7 @@ export type AjaxOptions <D extends AjaxData = AjaxData, Q extends AjaxQueryObjec
   type?: 'json' | 'text' | 'blob' | 'arrayBuffer' | 'formData'
 }
 
-class Ajax<V = any, D extends AjaxData = AjaxData, Q extends AjaxQueryObject = AjaxQueryObject> extends Async<V> {
+class Ajax<V = any, E = any, D extends AjaxData = AjaxData, Q extends AjaxQueryObject = AjaxQueryObject> extends Async<V, E> {
   @observable.shallow query: Q
   @observable.shallow data: D
   @observable.ref answer: Response
