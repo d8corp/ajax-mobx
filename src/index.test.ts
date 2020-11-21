@@ -1,11 +1,11 @@
 import Ajax from '.'
 import 'isomorphic-fetch'
 
-const user1 = '{"data":{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}'
+const user1 = fetch('https://reqres.in/api/users/1').then(data => data.text())
 
 describe('Ajax', () => {
   test('simple', async () => {
-    expect(await new Ajax('https://reqres.in/api/users/1')).toBe(user1)
+    expect(await new Ajax('https://reqres.in/api/users/1')).toBe(await user1)
   })
   describe('data', () => {
     test('field', async () => {
@@ -58,7 +58,7 @@ describe('Ajax', () => {
     const ajax = new Ajax('https://reqres.in/api/users/1')
     expect(ajax.value).toBe(undefined)
     await ajax
-    expect(ajax.value).toBe(user1)
+    expect(ajax.value).toBe(await user1)
   })
   test('then catch finally', async () => {
     const user = new Ajax('https://reqres.in/api/users/1')
@@ -71,8 +71,8 @@ describe('Ajax', () => {
 
     await user
 
-    expect(f).toBe(user1)
-    expect(t).toBe(user1)
+    expect(f).toBe(await user1)
+    expect(t).toBe(await user1)
     expect(c).toBe(undefined)
   })
   test('error', async () => {
